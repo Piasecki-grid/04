@@ -8,8 +8,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: linting
-        run: npm lint
+        run: npm run lint
       - name: testing
-        run: npm test
+        run: npm run test
       - name: buidling
         run: npm build
