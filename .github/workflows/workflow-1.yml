@@ -1,6 +1,5 @@
 name: lint, test, deploy
-on:
-  push:
+on: push
 
 jobs:
   runs-on: ubuntu-latest
@@ -12,4 +11,4 @@ jobs:
     - name: testing
       run: npm test
     - name: buidling
-      run: npm buil
+      run: npm build
