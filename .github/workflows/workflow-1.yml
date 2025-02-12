@@ -2,13 +2,14 @@ name: lint, test, deploy
 on: push
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: checkout
-      uses: actions/checkout@v4
-    - name: linting
-      run: npm lint
-    - name: testing
-      run: npm test
-    - name: buidling
-      run: npm build
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: linting
+        run: npm lint
+      - name: testing
+        run: npm test
+      - name: buidling
+        run: npm build
